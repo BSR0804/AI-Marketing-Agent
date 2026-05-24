@@ -286,7 +286,6 @@ export default function Landing() {
             icon={<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 256 256" fill="currentColor"><path d="M48,64a8,8,0,0,1,8-8H72V40a8,8,0,0,1,16,0V56h16a8,8,0,0,1,0,16H88V88a8,8,0,0,1-16,0V72H56A8,8,0,0,1,48,64ZM184,192h-8v-8a8,8,0,0,0-16,0v8h-8a8,8,0,0,0,0,16h8v8a8,8,0,0,0,16,0v-8h8a8,8,0,0,0,0-16Zm56-48H224V128a8,8,0,0,0-16,0v16H192a8,8,0,0,0,0,16h16v16a8,8,0,0,0,16,0V160h16a8,8,0,0,0,0-16ZM230.61,68.69,187.31,25.39a16,16,0,0,0-22.63,0L25.4,164.68a16,16,0,0,0,0,22.63l43.3,43.31a16,16,0,0,0,22.63,0L230.61,91.31A16,16,0,0,0,230.61,68.69ZM176,42.34l16,16L173.66,76.69l-16-16ZM80,219.31l-43.3-43.3,110.34-110.35,43.3,43.3Z"/></svg>} />
           <div className="md:col-span-5 border border-black/15 overflow-hidden aspect-[4/3] relative">
             <img src={LIFESTYLE} alt="lifestyle" className="absolute inset-0 w-full h-full object-cover" />
-            <div className="absolute bottom-3 left-3 kbd-tag bg-white">REF // CREATIVE-OUTPUT</div>
           </div>
         </div>
       </section>
