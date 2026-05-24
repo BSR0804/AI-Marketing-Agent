@@ -1,5 +1,5 @@
-import { useRef, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useRef, useState, useEffect } from 'react'
+import { useNavigate, useLocation } from 'react-router-dom'
 import toast from 'react-hot-toast'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
@@ -38,6 +38,7 @@ function PreviewTile({ span, tag, title, desc, icon }) {
 
 export default function Landing() {
   const nav = useNavigate()
+  const location = useLocation()
   const fileRef = useRef(null)
   const [imageFile, setImageFile] = useState(null)
   const [preview, setPreview] = useState(null)
@@ -45,6 +46,13 @@ export default function Landing() {
   const [productDescription, setProductDescription] = useState('')
   const [targetAudience, setTargetAudience] = useState('')
   const [submitting, setSubmitting] = useState(false)
+
+  useEffect(() => {
+    if (location.hash) {
+      const el = document.querySelector(location.hash)
+      if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50)
+    }
+  }, [location])
 
   const handleFile = (file) => {
     if (!file) return

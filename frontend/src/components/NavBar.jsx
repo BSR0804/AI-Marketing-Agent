@@ -24,7 +24,7 @@ export default function NavBar() {
         </Link>
 
         <nav className="flex items-center gap-8">
-          <Link to="/" className={lnk(pathname === '/')}>New&nbsp;Project</Link>
+          <Link to="/#upload" className={lnk(pathname === '/')}>New&nbsp;Project</Link>
           <Link to="/dashboard" className={lnk(pathname.startsWith('/dashboard'))}>Dashboard</Link>
         </nav>
       </div>

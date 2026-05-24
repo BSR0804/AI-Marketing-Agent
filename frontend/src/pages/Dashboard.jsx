@@ -115,7 +115,7 @@ export default function Dashboard() {
               Every product you brief, every output the agent ships. Saved, searchable, ready to re-run.
             </p>
           </div>
-          <Link to="/" className="group inline-flex items-center gap-2 bg-[#050505] text-white px-6 py-3.5 hover:bg-[#002FA7] transition-colors">
+          <Link to="/#upload" className="group inline-flex items-center gap-2 bg-[#050505] text-white px-6 py-3.5 hover:bg-[#002FA7] transition-colors">
             <span className="font-medium">New project</span>
             <svg className="group-hover:translate-x-1 transition-transform" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256" fill="currentColor">
               <path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z" />
@@ -158,7 +158,7 @@ export default function Dashboard() {
             </div>
             <h3 className="font-heading text-3xl font-black mt-4">No projects yet</h3>
             <p className="text-[#525252] mt-2 max-w-md mx-auto">Upload your first product to see the multi-step Gemini pipeline in action.</p>
-            <Link to="/" className="mt-6 inline-flex items-center gap-2 bg-[#002FA7] text-white px-5 py-3 hover:bg-[#001D66] transition-colors">
+            <Link to="/#upload" className="mt-6 inline-flex items-center gap-2 bg-[#002FA7] text-white px-5 py-3 hover:bg-[#001D66] transition-colors">
               Create first project
             </Link>
           </div>
