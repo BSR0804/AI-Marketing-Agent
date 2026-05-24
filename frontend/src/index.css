@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F5F5F5;
+  --text-primary: #050505;
+  --text-secondary: #525252;
+  --text-tertiary: #A3A3A3;
+  --brand-primary: #002FA7;
+  --brand-hover: #001D66;
+  --brand-accent: #FF4500;
+  --brand-warning: #FFCC00;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #050505;
+  font-family: 'IBM Plex Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection { background: #050505; color: #FFCC00; }
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.2); border-radius: 0; }
+::-webkit-scrollbar-thumb:hover { background: rgba(0,0,0,0.4); }
+
+.font-heading { font-family: 'Outfit', sans-serif; }
+
+.kbd-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: #F5F5F5;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee {
+  display: flex;
+  animation: marquee 40s linear infinite;
+  width: max-content;
+}
+
+@keyframes spin-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+.spin-slow { animation: spin-slow 4s linear infinite; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fadeUp 0.55s ease-out both; }
+.fade-up-1 { animation: fadeUp 0.55s 0.05s ease-out both; }
+.fade-up-2 { animation: fadeUp 0.55s 0.18s ease-out both; }
+.fade-up-3 { animation: fadeUp 0.55s 0.32s ease-out both; }
+.fade-up-4 { animation: fadeUp 0.55s 0.44s ease-out both; }
+.fade-up-5 { animation: fadeUp 0.55s 0.52s ease-out both; }
+.fade-up-6 { animation: fadeUp 0.55s 0.60s ease-out both; }
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to   { opacity: 1; transform: scale(1); }
+}
+.scale-in { animation: scaleIn 0.7s 0.2s ease-out both; }
