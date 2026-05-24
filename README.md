@@ -10,8 +10,6 @@
 | **Backend** (Render) | https://ai-marketing-agent-q0ne.onrender.com |
 | **API Docs** (Swagger) | https://ai-marketing-agent-q0ne.onrender.com/docs |
 
-> Render's free tier sleeps after ~15 min of inactivity. The first request after a cold start can take **30–50 seconds** while the dyno wakes — subsequent requests are instant.
-
 ---
 
 ## Tech Stack
